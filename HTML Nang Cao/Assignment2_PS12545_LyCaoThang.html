@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<title>TRANG WEB BÁN HÀNG </title>
+<link href="index.css" rel="stylesheet">
+<link href="css/all.min.css"   rel="stylesheet" >
+
+
+
+</head>
+<body>
+<div class="container">
+       <header>
+      
+       <!-- <img src="images/header2.png"/>
+       <div class="saleoff">
+        <img  src="images/saleoff.png"/> -->
+    </div>
+ 
+        <div class="headeroption">
+            <div style="color:white;padding: 0.4%;margin: 0.1%;">
+
+          <ul class="menu">
+        <li> <a href="1"><i class="fas fa-house-user fa-2x">Menu</i></a>
+          <ul class="vmenu">
+            <li><a href="https://www.nguyenkim.com/tu-lanh/">Tủ lạnh-Tủ đông</a></li> 
+            <li><a href="https://www.nguyenkim.com/tivi-man-hinh-lcd/">Tivi</a></li>
+            <li><a href="https://www.nguyenkim.com/may-giat/">Máy giặt</a></li>
+            <li><a href="https://www.nguyenkim.com/may-tinh-xach-tay/">LapTop</a></li>
+            
+          </ul>
+        </li>
+        </ul>
+            
+   
+         
+            <input id="inputsearch" type="text"  placeholder="Search">
+            <button id="btnSearch" type="text"  placeholder="Search">
+                
+                <i class="fas fa-search"></i>
+            </button>
+            
+            <a id="hotline" type="text"  placeholder="Search">
+               
+                <p>
+                
+                    <i class="fas fa-phone-volume"></i>  
+                    HOT LINE:
+                    <br>
+                    1900 1267
+                </p>
+                
+               
+            </a>
+            
+
+     <a id="optionmenu"><strong>Kiểm tra giá,
+          <br>Tồn kho tại Hồ Chí Minh &nbsp; 
+          
+          
+          &#8711; 
+        
+        </strong>  
+      </a>
+
+     
+           
+
+            </div>
+
+          
+          
+           
+           
+            </div>
+
+        
+        </div>
+      
+        
+       </header>
+
+       <!-- <nav>
+       nav
+
+      
+        
+        </nav> -->
+
+       <div class="banner">
+
+        <img src="images/banner1.png" height="370px" width="100%"  >
+       
+        
+        <div class="thang7">
+          
+         
+          <input id="PRE" type="button"  value="<">
+          <input id="NEXT" type="button" value=">">
+          <!-- <input id="FIRT" type="button" value="FIRT">
+          <input id="LAST" type="button" value="LAST"> -->
+          </div>
+        <div class="thangly">
+          <!-- <h4 class="count">Ảnh 1/20</h4><br><br><br><br><br> -->
+        </div>
+
+        
+        
+        <script>
+            var album=['banner1.png','banner2.png','headerttt.png','header2.png',];
+            var gggimg=0;
+            document.querySelector('#NEXT').addEventListener('click',function(){
+              if(gggimg==album.length-1){
+                  gggimg=0;
+              }
+              else{
+                  gggimg++;
+              }
+                let t=gggimg +1;
+                 document.querySelector('img').src=`images/${album[gggimg]}`;
+                //  document.querySelector('.count').innerHTML='Ảnh'+t+'/20';
+          });
+            document.querySelector('#PRE').addEventListener('click',function(){
+              if(gggimg==0){
+                gggimg=album.length-1;
+        
+              }else{
+                gggimg--;
+              }
+                    let t=gggimg +1;
+                    document.querySelector('img').src=`images/${album[gggimg]}`;
+               
+                // document.querySelector('.count').innerHTML='Ảnh'+t+'/20';
+          });
+                // document.querySelector('#FIRT').addEventListener('click',function(){
+                   
+                //         gggimg=0;
+                    
+                  
+                //     document.querySelector('img').src=`images/${album[gggimg]}`;
+                //     document.querySelector('.count').innerHTML='Ảnh'+1+'/20';;
+                // } );
+                
+                // document.querySelector('#LAST').addEventListener('click',function(){
+                //    gggimg=album.length-1;
+                //     document.querySelector('img').src=`images/${album[gggimg]}`;
+                //     document.querySelector('.count').innerHTML='Ảnh'+20+'/20';
+                // } );
+        
+               function slideshows(){
+                let t=gggimg +1;
+                 document.querySelector('img').src=`images/${album[gggimg]}`;
+                //  document.querySelector('.count').innerHTML='Ảnh' +t+'/20';
+                 gggimg++;
+                 if(gggimg==album.length){
+                   gggimg=0;
+                
+                 }
+                
+                 setTimeout("slideshows()",3000);
+               }
+               slideshows();
+        
+              
+             </script>
+           
+
+
+
+       </div>
+<div>  
+    
+        <article>
+          <br>
+          <!-- TIVI 1 -->
+        <a href="trangcon1.html"><div class="box1"> 
+          <img src="images/tivi1.png" width="100%"/>
+          <center><a>TIVI SAMSUNG</a></center>
+<h4>NEW:7.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>8.000.000VNĐ</strike></p>
+        </div>
+      </a> 
+       
+        
+         <!-- TIVI 2 -->
+       <a href="trangcon4.html"> <div class="box1">
+          <img src="images/tivi2.png" width="100%"/>
+           <center><a>TIVI SONY</a></center>  
+<h4>NEW:7.500.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>8.200.000VNĐ</strike></p>
+        </div>
+      </a>
+
+
+         <!-- TIVI 3 -->
+        <div class="box1">
+          <img src="images/tivi3.png" width="100%"/>    
+          <center><a>TIVI PHILIPS</a></center>     
+<h4>NEW:8.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>8.500.000VNĐ</strike></p>
+        </div>
+
+
+         <!-- TIVI 4 -->
+        <div class="box1">
+          <img src="images/tivi4.png" width="100%"/>
+          <center><a>TIVI SHARP</a></center>      
+<h4>NEW:9.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>9.200.000VNĐ</strike></p>
+        </div>
+
+
+         <!-- MayGiat 1 -->
+       <a href="trangcon2.html"> <div class="box1">
+          <img src="images/maygiat1.png" width="100%" /> 
+          <center><a>Máy Giặt SAMSUNG</a></center>     
+<h4>NEW:5.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>5.600.000VNĐ</strike></p>
+        </div>
+      </a>
+
+                 <!-- MayGiat 2 -->
+       <a href="trangcon5.html"> <div class="box1">
+          <img src="images/maygiat2.png" width="100%" />
+          <center><a>Máy Giặt TOSHIBA</a></center>   
+<h4>NEW:7.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>8.000.000VNĐ</strike></p>
+        </div>
+      </a>
+
+
+                 <!-- MayGiat 3 -->
+        <div class="box1">
+          <img src="images/maygiat3.png" width="100%"/> 
+          <center><a>Máy Giặt LG</a></center> 
+<h4>NEW:6.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>7.000.000VNĐ</strike></p>
+        </div>
+
+
+                 <!-- MayGiat 4 -->
+        <div class="box1">
+          <img src="images/maygiat4.png" width="100%" />       
+          <center><a>Máy Giặt CANDY</a></center>        
+<h4>NEW:12.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>13.000.000VNĐ</strike></p>
+        </div>
+
+
+        <!-- Laptop 1 -->
+       <a href="trangcon3.html"> <div class="box1">
+          <img src="images/laptop1.png" width="100%"/>
+          <center><a>MACBOOK PRO</a></center>   
+<h4>NEW:40.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>40.500.000VNĐ</strike></p>
+        </div>
+      </a>
+
+        <!-- laptop 2 -->
+        <div class="box1">
+          <img src="images/laptop2.png" width="100%"/>       
+          <center><a>LAPTOP MSI</a></center>        
+<h4>NEW:21.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>22.000.000VNĐ</strike></p>
+        </div>
+
+        <!-- Laptop 3 -->
+        <div class="box1">
+          <img src="images/laptop3.png" width="100%"/>        
+          <center><a>MACBOOK TUBAR</a></center>        
+<h4>NEW:55.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>56.000.000VNĐ</strike></p>
+        </div>
+
+        <!-- laptop 4 -->
+        <div class="box1">
+          <img src="images/laptop4.png" width="100%" />  
+          <center><a>MACBOOK AIR 13.3 </a></center>        
+<h4>NEW:36.000.000VNĐ <img src="images/saleoff2.gif" width="15%" /></h4>
+<br>
+          <p><strike>37.000.000VNĐ</strike></p>
+        </div>
+
+
+           
+        </article>
+
+
+
+        <aside>
+          <center><h2> Đăng kí</h2></center>
+          <form onsubmit="return kiemTra()">
+          <p>
+              <label>Họ & Tên:</label>
+              <input type="text" id="hoTen">
+              </p>
+              <p>
+                  <label>Giới tính:</label>
+                  <input id="name" type="radio" name="sex">Nam
+                  <input id="name" type="radio" name="sex">Nữ
+                  </p>
+              <p>
+                  <label>Số Phone:</label>
+                  <input type="text" id="phone">
+              </p>
+             <center> <button>Đăng kí ngay</button></center>
+          </form>
+          <ul id="loi">
+          </ul>
+          <script>
+           function kiemTra(){
+               var isvalid=true;
+               var sumloi="";
+               //code kiểm tra hợp lệ các thành phần trong thẻ form
+               var ht=document.querySelector('#hoTen').value;
+               if(ht.length==0){
+                   isvalid=false;
+                   sumloi+="<li>Bạn chưa nhập họ tên</li>";
+               }
+               //kiểm tra giới tính
+               var hopLe=false;
+               var gt=document.querySelectorAll('[name="sex"]');
+               gt.forEach(s=>{
+               if(s.checked){
+                   hopLe=true;
+               }
+               });
+               if(hopLe==false){
+                   isvalid=false;
+                   sumloi+="<li>Bạn chưa chọn giới tính</li>";
+               }
+               //Kiểm tra số điện thoại
+               var phone=document.querySelector('#phone').value;
+               if(phone.length<10||phone.length>11){
+                   isvalid=false;
+                   sumloi+="<li>Số điện thoại không hợp lệ!</li>";
+               }
+              
+               //Xuất lỗi
+               if(isvalid==false){
+                   document.querySelector('#loi').innerHTML=sumloi;
+                   document.querySelector('#loi').style.color="Blue";
+               }else{
+                alert("Đăng kí thành công!");
+                location.reload(); 
+               }
+
+ 
+              return isvalid;
+              
+              
+           }
+          
+          </script>
+
+<br>
+
+<div class="hinhaside">
+  
+</div>
+
+<div class="hinhaside2">
+  
+</div>
+
+
+          
+        </aside>
+</div>
+
+<footer>
+
+<div class="chu" > &copy;Bản quyền thuộc Lý Cao Thắng <br>
+    Cửa hàng uy tín hàng đầu VN phân phối tại TPHCM<br>
+    Thiết kế bởi: Lý Cao Thắng, Email:thanglcps12545@fpt.edu.vn, MSSV:PS12545  
+    <div class="hinhanh">
+      <i class="fab fa-facebook"></i>Kết nối với chúng tôi </div>
+    <div class="hinhanh2"><i class="fas fa-map-marker-alt"></i>Tìm kiếm địa chỉ dễ dàng </div>
+    <div class="hinhanh3"><i class="fas fa-phone-alt"></i> Liên hệ với chúng tôi </div>
+     </div>
+
+     <!-- <script src="https://uhchat.net/code.php?f=0aca66"> -->
+    
+    
+    </script>
+
+</footer>
+
+
+</div>
+
+
+</body>
+</html>
